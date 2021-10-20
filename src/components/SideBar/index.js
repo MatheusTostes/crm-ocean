@@ -8,6 +8,7 @@ import { ReactComponent as SairIcon } from './images/sair.svg';
 
 function SideBar () {
   return (
+  <>
     <Container>
       <NavGroup>
         <Logo>
@@ -42,6 +43,7 @@ function SideBar () {
         <h4>Sair</h4>
       </Button>
     </Container>
+  </>
   )
 }
 

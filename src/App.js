@@ -1,8 +1,11 @@
 import React, { Fragment } from 'react'
 import GlobalStyle from './globalStyles'
-import Header from './components/Header'
 import SideBar from './components/SideBar'
-import { Container } from './styles'
+import Header from './components/Header'
+import StatisticCards from './components/StatisticCards'
+import DashboardsPanel from './components/DashboardsPanel'
+import ClientsTable from './components/ClientsTable'
+import { Container, Content } from './styles'
 
 function App() {
   return (
@@ -10,7 +13,12 @@ function App() {
     <GlobalStyle/>
       <Container>
         <SideBar/>
-        <Header/>
+        <Content>
+          <Header/>
+          <StatisticCards/>
+          <DashboardsPanel/>
+          <ClientsTable/>
+        </Content>
       </Container>
     </Fragment>
   );
