@@ -5,7 +5,7 @@ import { ReactComponent as NotificationIcon } from './images/notificacao.svg';
 import { ReactComponent as OptionsIcon } from './images/opcoes.svg';
 
 function Header () {
-  const [userOpt, setUserOpt] = useState("")
+  const [userOpt, setUserOpt] = useState('none')
   
   function userOptions () {
     if (userOpt === "none") {
