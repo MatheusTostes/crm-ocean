@@ -104,11 +104,3 @@ export const Button = styled.button`
     background-color: #353535;  
   }
 `
-export const Mask = styled.div`
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  background-color: red;
-  height: 100%;
-  width: 100vh;
-`

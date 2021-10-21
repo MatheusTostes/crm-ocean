@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, SearchBox, Input, User, OptionsBox, Button, Mask } from './styles'
+import { Container, SearchBox, Input, User, OptionsBox, Button } from './styles'
 import { ReactComponent as SearchIcon } from './images/search.svg';
 import { ReactComponent as NotificationIcon } from './images/notificacao.svg';
 import { ReactComponent as OptionsIcon } from './images/opcoes.svg';
@@ -25,7 +25,6 @@ function Header () {
           <Input/>
         </SearchBox>
         <User>
-
           <NotificationIcon className="notification-icon"/>
           <img src="./images/userpic.jpg" alt="foto"/>
           <OptionsIcon onClick={userOptions} className="options-icon"/>
@@ -38,7 +37,6 @@ function Header () {
             <Button>Configurações</Button>
             <Button>Ajuda</Button>
             <Button>Sair</Button>
-            {/* <Mask onClick={userOptions}/>  */}
           </OptionsBox>
         </User>
       </Container>
