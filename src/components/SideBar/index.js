@@ -12,10 +12,10 @@ function SideBar () {
     <Container>
       <NavGroup>
         <Logo>
-          <img src="./images/logo.jpg" alt="logo"/>
+          <img src="./images/logo.png" alt="logo"/>
         </Logo>
         <Nav>
-          <Button>
+          <Button className="activeButton">
             <DashboardIcon className="svgButton"/>
             <h4>Dashboard</h4>
           </Button>

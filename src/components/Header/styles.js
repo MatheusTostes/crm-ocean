@@ -6,6 +6,7 @@ export const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 1.1vw;
 `
 export const SearchBox = styled.div`
   background: white;

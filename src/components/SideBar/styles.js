@@ -10,10 +10,28 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: space-between;
   box-shadow: 0 1px 10px #B8CEEF;
+
+  .activeButton {
+    padding-left: 82px;
+    cursor: default;
+    transition: 0.2s;
+    h4 {
+      background: -webkit-linear-gradient(270deg, rgba(7,159,255,1) 0%, rgba(26,244,180,1) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .svgButton {
+      fill: -webkit-linear-gradient(270deg, rgba(7,159,255,1) 0%, rgba(26,244,180,1) 100%);
+    }
+
+    :hover {
+      background: none;
+    }
+  }
 `
 export const Logo = styled.div`
-  margin: 10px 30px 30px 30px;
-  background-color: #010101;
+  margin: 10px 30px 10px 30px;
+  background: none;
   width: 180px;
   height: 120px;
   display: flex;
@@ -21,7 +39,8 @@ export const Logo = styled.div`
   justify-content: center;
 
   img {
-    width: 70%;
+    width: 90%;
+    background: none;
   }
 `
 export const Nav = styled.div`
@@ -66,6 +85,8 @@ export const Button = styled.button`
       fill: -webkit-linear-gradient(270deg, rgba(7,159,255,1) 0%, rgba(26,244,180,1) 100%);
     }
   }
+
+  
 `
 export const NavGroup = styled.div`
   background-color: white;
