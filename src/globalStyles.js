@@ -8,6 +8,13 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     color: #353535;
     font-family: 'Poppins', sans-serif;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
 `
 
