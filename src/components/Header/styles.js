@@ -75,6 +75,7 @@ export const OptionsBox = styled.div`
   border-radius: 10px 0px 10px 10px;
   display: ${props => `${props.state}`};
   box-shadow: 2px 4px 5px #B8CEEF;
+  z-index: 1;
 
   .options-text{
     background: none;

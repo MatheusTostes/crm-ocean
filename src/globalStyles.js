@@ -1,12 +1,13 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700;800;900&display=swap');
+
   * {
     margin: 0;
     padding: 0;
-    background-color: #eff5ff;
     color: #353535;
-    font-family: helvetica, arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
   }
 `
 

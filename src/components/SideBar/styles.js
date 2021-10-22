@@ -28,6 +28,10 @@ export const Container = styled.div`
       background: none;
     }
   }
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
 `
 export const Logo = styled.div`
   margin: 10px 30px 10px 30px;
