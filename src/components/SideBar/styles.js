@@ -31,7 +31,6 @@ export const Hr1 = styled(Hr)`
   transform: ${props => (props.menuState) 
   ? 'translate(0, 10px) rotate(45deg)' 
   : 'rotate(0deg)'};
-  
   transition: 0.5s;
 `
 export const Hr2 = styled(Hr)`

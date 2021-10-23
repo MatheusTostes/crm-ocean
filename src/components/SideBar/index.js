@@ -19,7 +19,8 @@ function SideBar () {
   useEffect(() => {
     document.addEventListener("mousedown", (event) => {
       if (!menuRef.current.contains(event.target)) {
-        setMenuOn('none')
+        console.log("clicando fora")
+        setMenuOn(false)
       }
     })
   })

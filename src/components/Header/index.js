@@ -30,7 +30,7 @@ function Header () {
 
   return (
     <>
-      <Container>
+      <Container ref={menuRef}>
         <SearchBox>
           <SearchIcon className="search-icon"/>
           <Input/>
