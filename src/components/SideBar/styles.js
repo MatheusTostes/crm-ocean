@@ -88,7 +88,7 @@ export const MenuBar = styled.div`
     margin-left: -250px;
 
     @keyframes example{
-      100% {margin-left: 0px}:
+      100% {margin-left: 0px};
     }
 
     .quitButton {
