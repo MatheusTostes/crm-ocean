@@ -75,6 +75,10 @@ export const MenuBar = styled.div`
   @media (max-width: 1000px) {
     display: ${props => props.menuState ? 'flex' : 'none'};
     z-index: 1;
+    
+    .quitButton {
+      margin-bottom: 40px;
+    }
   }
 `
 export const Logo = styled.div`

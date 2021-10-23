@@ -61,7 +61,7 @@ function SideBar () {
         </Nav>
       </NavGroup>
 
-      <Button>
+      <Button className="quitButton">
         <SairIcon className="svgButton"/>
         <h4>Sair</h4>
       </Button>

@@ -30,12 +30,12 @@ function Header () {
 
   return (
     <>
-      <Container ref={menuRef}>
+      <Container>
         <SearchBox>
           <SearchIcon className="search-icon"/>
           <Input/>
         </SearchBox>
-        <User>
+        <User ref={menuRef}>
           <NotificationIcon className="notification-icon"/>
           <img src="./images/userpic.jpg" alt="foto"/>
           <OptionsIcon onClick={userOptions} className="options-icon" ref={menuRef}/>
