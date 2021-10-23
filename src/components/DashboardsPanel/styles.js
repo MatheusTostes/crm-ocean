@@ -19,7 +19,7 @@ export const CardHeader = styled.div`
   font-size: min(1.2vw, 1rem);
   flex-wrap: wrap;
     
-  h2, h5 {
+  h3, h5 {
     margin: 1.3%;
   }
 
@@ -27,7 +27,7 @@ export const CardHeader = styled.div`
     font-size: 1rem;
     margin: 1.1vw auto;
     
-    h2, h5{
+    h3, h5{
       width: 100%;
       text-align: center;
     }

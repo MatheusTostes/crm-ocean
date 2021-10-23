@@ -38,7 +38,7 @@ function Header () {
         <User>
           <NotificationIcon className="notification-icon"/>
           <img src="./images/userpic.jpg" alt="foto"/>
-          <OptionsIcon onClick={userOptions} className="options-icon"/>
+          <OptionsIcon onClick={userOptions} className="options-icon" ref={menuRef}/>
           <OptionsBox state={userOpt} ref={menuRef}>
             <h6 className="options-text">Conectado como:</h6>
             <h5 className="options-text">Matheus Tostes</h5>

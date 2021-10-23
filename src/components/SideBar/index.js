@@ -1,4 +1,5 @@
-import { Container, NavGroup, Logo, Nav, Button } from './styles'
+import { useState, useRef, useEffect} from 'react';
+import { Container, MenuOnButton, Hr1, Hr2, Hr3, MenuBar, NavGroup, Logo, Nav, Button } from './styles'
 import { ReactComponent as DashboardIcon } from './images/dashboard.svg';
 import { ReactComponent as PedidosIcon } from './images/pedidos.svg';
 import { ReactComponent as ProdutosIcon } from './images/produtos.svg';
@@ -7,9 +8,30 @@ import { ReactComponent as ClientesIcon } from './images/clientes.svg';
 import { ReactComponent as SairIcon } from './images/sair.svg';
 
 function SideBar () {
+  const [menuOn, setMenuOn] = useState(false)
+
+  function openMenu() {
+    setMenuOn(!menuOn)
+  }
+
+  let menuRef = useRef()
+
+  useEffect(() => {
+    document.addEventListener("mousedown", (event) => {
+      if (!menuRef.current.contains(event.target)) {
+        setMenuOn('none')
+      }
+    })
+  })
+
   return (
-  <>
-    <Container>
+  <Container ref={menuRef}>
+    <MenuOnButton onClick={openMenu}>
+      <Hr1 className="hrPrimary" menuState={menuOn}/>
+      <Hr2 className="onHide" menuState={menuOn}/>
+      <Hr3 className="hrSecondary" menuState={menuOn}/>
+    </MenuOnButton>
+    <MenuBar menuState={menuOn}>
       <NavGroup>
         <Logo>
           <img src="./images/logo.png" alt="logo"/>
@@ -42,8 +64,8 @@ function SideBar () {
         <SairIcon className="svgButton"/>
         <h4>Sair</h4>
       </Button>
-    </Container>
-  </>
+    </MenuBar>
+  </Container>
   )
 }
 

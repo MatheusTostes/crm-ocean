@@ -1,6 +1,50 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
+`
+export const MenuOnButton = styled.button`
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  margin: 1.2% 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: none;
+  border: none;
+  opacity: 0.8;
+  cursor: pointer;
+  z-index: 2;
+
+  @media (min-width: 1000px) {
+    display: none;
+  }
+`
+export const Hr = styled.hr`
+  background: #353535;
+  width: 100%;
+  height: 7px;
+  border: none;
+  border-radius: 3px;
+`
+export const Hr1 = styled(Hr)`
+  transform: ${props => (props.menuState) 
+  ? 'translate(0, 10px) rotate(45deg)' 
+  : 'rotate(0deg)'};
+  
+  transition: 0.5s;
+`
+export const Hr2 = styled(Hr)`
+  display: ${props => (props.menuState) ? 'none' : 'block'};
+`
+export const Hr3 = styled(Hr)`
+  transform: ${props => (props.menuState) 
+  ? 'translate(0, -8px) rotate(-45deg)' 
+  : 'rotate(0deg)'};
+  transition: 0.5s;
+`
+
+export const MenuBar = styled.div`
   position: fixed;
   background-color: #fcfcfc;
   width: 250px;
@@ -30,7 +74,8 @@ export const Container = styled.div`
   }
 
   @media (max-width: 1000px) {
-    display: none;
+    display: ${props => props.menuState ? 'flex' : 'none'};
+    z-index: 1;
   }
 `
 export const Logo = styled.div`
@@ -89,8 +134,6 @@ export const Button = styled.button`
       fill: -webkit-linear-gradient(270deg, rgba(7,159,255,1) 0%, rgba(26,244,180,1) 100%);
     }
   }
-
-  
 `
 export const NavGroup = styled.div`
   background-color: white;

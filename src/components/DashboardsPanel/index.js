@@ -5,7 +5,7 @@ function DashboardsPanel () {
     <>
       <Container>
         <CardHeader>
-          <h2>Relatório de Vendas</h2>
+          <h3>Relatório de Vendas</h3>
           <Periods>
             <hr className="vendasAntigas" />
             <h5>Vendas de 2020</h5>

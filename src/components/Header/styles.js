@@ -16,12 +16,16 @@ export const SearchBox = styled.div`
   display: flex;
   align-items: center;
   border-radius: 50px;
-
+  
   .search-icon {
     height: 15px;
     background: none;
     margin: 0 10px;
     opacity: 0.25;
+  }
+
+  @media (max-width: 1000px) {
+    margin-left: 55px;
   }
 `
 export const Input = styled.input`
@@ -88,6 +92,10 @@ export const OptionsBox = styled.div`
     height: 1px;
     background-color: #353535;
     margin: 9px 0;
+  }
+
+  h5 {
+    font-size: 0.8rem;
   }
 `
 export const Button = styled.button`
