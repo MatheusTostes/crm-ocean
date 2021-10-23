@@ -10,7 +10,7 @@ export const Container = styled.div`
 `
 export const SearchBox = styled.div`
   background: white;
-  width: 30%;
+  /* width: 30%; */
   height: 15px;
   padding: 10px 2px;
   display: flex;
@@ -30,12 +30,17 @@ export const SearchBox = styled.div`
 `
 export const Input = styled.input`
   background: none;
-  width: 100%;
+  width: 10vw;
   border: none;
   outline: none;
   caret-color: rgba(7,159,255,1);
   color: rgba(7,159,255,1);
   font-size: 0.8rem;
+
+  :focus {
+    width: 40vw;
+    transition: 1s;
+  }
 `
 export const User = styled.div`
   height: 100%;

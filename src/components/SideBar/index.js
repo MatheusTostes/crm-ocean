@@ -26,13 +26,13 @@ function SideBar () {
   })
 
   return (
-  <Container ref={menuRef}>
+  <Container ref={menuRef} menuState={menuOn}>
     <MenuOnButton onClick={openMenu}>
       <Hr1 className="hrPrimary" menuState={menuOn}/>
       <Hr2 className="onHide" menuState={menuOn}/>
       <Hr3 className="hrSecondary" menuState={menuOn}/>
     </MenuOnButton>
-    <MenuBar menuState={menuOn}>
+    <MenuBar className="menuBar" menuState={menuOn}>
       <NavGroup>
         <Logo>
           <img src="./images/logo.png" alt="logo"/>

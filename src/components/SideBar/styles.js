@@ -53,6 +53,15 @@ export const MenuBar = styled.div`
   flex-direction: column;
   justify-content: space-between;
   box-shadow: 0 1px 10px #B8CEEF;
+  animation-name: example;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  
+  /* :hover {
+    margin-left: ${props => props.menuState ? '0px' : '-150px'};
+    transition: 0.5s;
+  } */
+  
 
   .activeButton {
     padding-left: 82px;
@@ -75,7 +84,13 @@ export const MenuBar = styled.div`
   @media (max-width: 1000px) {
     display: ${props => props.menuState ? 'flex' : 'none'};
     z-index: 1;
-    
+
+    margin-left: -250px;
+
+    @keyframes example{
+      100% {margin-left: 0px}:
+    }
+
     .quitButton {
       margin-bottom: 40px;
     }
@@ -84,8 +99,8 @@ export const MenuBar = styled.div`
 export const Logo = styled.div`
   margin: 10px 30px 10px 30px;
   background: none;
-  width: 180px;
-  height: 120px;
+  width: 90%;
+  height: 30%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -95,6 +110,13 @@ export const Logo = styled.div`
     background: none;
   }
 `
+export const NavGroup = styled.div`
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
 export const Nav = styled.div`
   background-color: white;
   width: 100%;
@@ -102,6 +124,7 @@ export const Nav = styled.div`
   flex-direction: column;
 `
 export const Button = styled.button`
+  width: 100%;
   margin: 2px 0;
   padding: 15px 45px 15px 50px;
   text-align: left;
@@ -137,11 +160,4 @@ export const Button = styled.button`
       fill: -webkit-linear-gradient(270deg, rgba(7,159,255,1) 0%, rgba(26,244,180,1) 100%);
     }
   }
-`
-export const NavGroup = styled.div`
-  background-color: white;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 `
