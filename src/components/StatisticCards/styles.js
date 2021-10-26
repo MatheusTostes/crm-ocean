@@ -24,10 +24,12 @@ export const Card = styled.div`
     margin: 1vw;
   }
 
+  @media (min-width: 951px) {
+    width: 23%;
+  }
   @media (max-width: 950px) {
     width: 49%;
     height: 60px;
-  
   }
   @media (max-width: 360px) {
     width: 100%;
