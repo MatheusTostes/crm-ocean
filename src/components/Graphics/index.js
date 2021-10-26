@@ -2,27 +2,22 @@ import React from 'react'
 import { Line } from 'react-chartjs-2'
 import { Container } from './styles'
 
-function Graphics () {
-
-  // sells = random(0, 25)
-
+function Graphics (props) {
   return (
     <Container>
       <Line 
         data={{
-          // labels: [...Array(12).keys()],
-          labels: [ 'janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'],
+          labels: props.interval,
           datasets: [
             {
               lineTension: 0.5, 
-              data: [...Array(12)].map(e=>~~(Math.random()*(180-110+30)+110)),
-              // data: [...Array(365).keys()],
+              data: props.data1,
               borderColor: 'rgba(7,159,255,1)',
               borderWidth: 2,
             },
             {
               lineTension: 0.5, 
-              data: [...Array(12)].map(e=>~~(Math.random()*(190-110+30)+110)),
+              data: props.data2,
               backgroundColor: 'rgba(224, 235, 250, 0.5)',
               borderColor: 'rgba(26,244,180,1)',
               borderWidth: 2,
@@ -30,8 +25,6 @@ function Graphics () {
             }
           ]
         }}
-        height={300}
-        width={100}
         options={{
           plugins: {
             legend: {

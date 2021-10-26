@@ -1,6 +1,17 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
+  width: 100%;
+
+  .card-extra {
+    width: 49%;
+
+    @media (max-width: 760px) {
+      width: 100%;
+    }
+  }
+`
+export const Card = styled.div`
   background-color: white;
   width: 100%;
   border-radius: 8px;
@@ -12,7 +23,7 @@ export const Container = styled.div`
 `
 export const CardHeader = styled.div`
   background: none;
-  width: 100%;
+  width: 98%;
   display: flex; 
   align-items: center;
   justify-content: space-between;
@@ -20,7 +31,7 @@ export const CardHeader = styled.div`
   flex-wrap: wrap;
     
   h3, h5 {
-    margin: 1.3%;
+    margin: 1vw;
   }
 
   @media (max-width: 950px) {
@@ -43,15 +54,17 @@ export const Periods = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1.3%;
+  
+  flex-wrap: wrap;
 
   div {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 11rem;
+    justify-content: flex-end;
+    width: 15vw;
   }
-
+  
   h5{
     opacity: 0.7;
   }
@@ -72,12 +85,24 @@ export const Periods = styled.div`
   }
 
   @media (max-width: 950px) {
-    margin: auto;
+    width: 100%;
+    justify-content: center;
   }
 
   @media (max-width: 550px) {
     .vendasAntigas, .vendasRecentes {
       width: 30px;
     }
+  }
+`
+export const SubCards = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  @media (max-width: 760px) {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
   }
 `

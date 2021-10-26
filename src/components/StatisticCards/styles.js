@@ -21,14 +21,18 @@ export const Card = styled.div`
   img {
     background: none;
     height: 50%;
-    margin: 8%;
+    margin: 1vw;
   }
 
   @media (max-width: 950px) {
-    width: 220px;
+    width: 49%;
     height: 60px;
-    flex-wrap: wrap;
-    margin: 1.1vw auto;
+  
+  }
+  @media (max-width: 360px) {
+    width: 100%;
+    height: 60px;
+    justify-content: center;
   }
 `
 export const CardText = styled.div`
