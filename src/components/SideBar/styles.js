@@ -85,6 +85,11 @@ export const MenuBar = styled.div`
     display: ${props => props.menuState ? 'flex' : 'none'};
     z-index: 1;
 
+    margin-left: -250px;
+
+    @keyframes example{
+      100% {margin-left: 0px};
+    }
 
     .quitButton {
       margin-bottom: 40px;

@@ -32,27 +32,35 @@ export const CardHeader = styled.div`
       text-align: center;
     }
   }
+  
+  @media (max-width: 350px) {
+    div {
+      flex-direction: column;
+    }
+  }
 `
 export const Periods = styled.div`
-  width: 320px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 1.3%;
 
-  h5{
-    opacity: 0.7;
+  div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 11rem;
   }
 
-  hr {
-    margin: 10px;
+  h5{
+    opacity: 0.7;
   }
 
   .vendasAntigas, .vendasRecentes {
     width: 30px;
     height: 2px;
-    margin-right: -30px;
     border: none;
+    margin: 0 10px 0 20px;
   }
 
   .vendasAntigas {
@@ -65,9 +73,11 @@ export const Periods = styled.div`
 
   @media (max-width: 950px) {
     margin: auto;
+  }
 
-    h5 {
-      margin-left: 20px;
+  @media (max-width: 550px) {
+    .vendasAntigas, .vendasRecentes {
+      width: 30px;
     }
   }
 `
