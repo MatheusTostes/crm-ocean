@@ -27,7 +27,7 @@ export const Card = styled.div`
 `
 export const CardHeader = styled.div`
   background: none;
-  width: 98%;
+  width: 96%;
   display: flex; 
   align-items: center;
   justify-content: space-between;
@@ -35,7 +35,7 @@ export const CardHeader = styled.div`
   flex-wrap: wrap;
     
   h3, h5 {
-    margin: 1vw;
+    margin: 1vw 0;
   }
 
   @media (max-width: 950px) {
@@ -66,7 +66,11 @@ export const Periods = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
-    margin-left: 20px;
+    margin-left: 2rem;
+
+    @media (max-width: 350px) {
+      margin: 0;
+    }
   }
   
   h5{
