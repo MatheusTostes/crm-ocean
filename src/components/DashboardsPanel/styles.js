@@ -2,6 +2,10 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  overflow-x: hidden;
 
   .card-extra {
     width: 49%;

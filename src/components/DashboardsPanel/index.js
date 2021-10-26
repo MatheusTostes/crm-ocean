@@ -57,7 +57,7 @@ function DashboardsPanel () {
               data2={[...Array(7)].map(e=>~~(Math.random()*(190-110+30)+110))}
             />
           </Card>
-        </SubCards>
+        </SubCards> 
       </Container>
     </>
   )

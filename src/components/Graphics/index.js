@@ -25,6 +25,8 @@ function Graphics (props) {
             }
           ]
         }}
+        width= {100}
+        height= {100}
         options={{
           plugins: {
             legend: {
@@ -40,6 +42,7 @@ function Graphics (props) {
                 radius: 0.1,
             }
           },
+          responsive: true,
           maintainAspectRatio: false,
           scales: {
             y: {
