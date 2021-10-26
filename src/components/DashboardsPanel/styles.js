@@ -56,17 +56,17 @@ export const CardHeader = styled.div`
 `
 export const Periods = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 
   div {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
-    width: 15vw;
+    margin-left: 20px;
   }
   
   h5{
@@ -77,7 +77,7 @@ export const Periods = styled.div`
     width: 30px;
     height: 2px;
     border: none;
-    margin: 0 10px 0 20px;
+    margin-right: 0.5rem;
   }
 
   .vendasAntigas {
