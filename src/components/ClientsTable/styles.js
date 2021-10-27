@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   background-color: white;
-  width: 100vw;
+  width: 100%;
   border-radius: 8px;
   margin: 1.1vw 0;
   display: flex;
@@ -20,10 +20,16 @@ export const Table = styled.table`
   margin: 0 0 1.5% 0; 
   border-collapse: collapse;
   
-  @media (max-width: 1100px) {
+  @media (max-width: 1120px) {
+    width: 71vw;
+    margin: 0px;
+    padding: 0px;
     display: block;
     overflow-x: auto;
     white-space: nowrap;
+  }
+  @media (max-width: 1000px) {
+    width: 96vw;
   }
 
   h4, h5 {

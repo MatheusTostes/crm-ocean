@@ -24,8 +24,6 @@ function ClientsTable () {
             <th><h4>Horário</h4></th>
             <th><h4>Nº do Pedido</h4></th>
             <th><h4>Método de pagamento</h4></th>
-            {/* <th className="action-column"></th>
-            <th className="action-column"></th> */}
           </tr>
           <tbody>
           {json.map((client, index) => 
@@ -44,8 +42,6 @@ function ClientsTable () {
                     </div>
                   </div>
                 </td>
-                {/* <td className="action-column"><button><EditIcon className="action-button"/></button></td>
-                <td className="action-column"><button><DeleteIcon className="action-button"/></button></td> */}
               </tr>
             )}
             </tbody>
