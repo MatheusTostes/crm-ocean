@@ -28,9 +28,9 @@ function SideBar () {
   return (
   <Container ref={menuRef} menuState={menuOn}>
     <MenuOnButton onClick={openMenu}>
-      <Hr1 className="hrPrimary" menuState={menuOn}/>
-      <Hr2 className="onHide" menuState={menuOn}/>
-      <Hr3 className="hrSecondary" menuState={menuOn}/>
+      <Hr1 menuState={menuOn}/>
+      <Hr2 menuState={menuOn}/>
+      <Hr3  menuState={menuOn}/>
     </MenuOnButton>
     <MenuBar className="menuBar" menuState={menuOn}>
       <NavGroup>

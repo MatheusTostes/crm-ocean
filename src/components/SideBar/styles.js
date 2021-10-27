@@ -128,13 +128,14 @@ export const Button = styled.button`
   margin: 2px 0;
   padding: 15px 45px 15px 50px;
   text-align: left;
+  display: flex;
+  align-items: center;
   color: #353535;
   font-size: 1rem;
   font-weight: 600;
   background-color: transparent;
   border: none;
   cursor: pointer;
-  display: flex;
 
   h4 {
     background-color: transparent;
