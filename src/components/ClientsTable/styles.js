@@ -38,6 +38,7 @@ export const Table = styled.table`
 
   h5 {
     color: rgba(0, 0, 0, 0.6);
+    font-weight: 600;
   }
 
   .client-div {
@@ -64,10 +65,13 @@ export const Table = styled.table`
     background-color: transparent;
     border-color: red;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    :hover {
+      background-color: rgba(0, 0, 0, 0.1);
   }
 
   td {
     height: 45px;
+    }
   }
 
   img {
