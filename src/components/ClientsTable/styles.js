@@ -76,8 +76,9 @@ export const Table = styled.table`
 
   img {
     background: -webkit-linear-gradient(270deg, rgba(7,159,255,0.3) 0%, rgba(26,244,180,0.3) 100%);
-    height: 100%;
+    object-fit: cover;
     width: 30px;
+    height: 30px;
     padding: 1px;
     border-radius: 50px;
     margin-right: -10px;
