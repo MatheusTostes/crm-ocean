@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.div`
 `
 export const MenuOnButton = styled.button`
-  position: absolute;
+  position: fixed;
   width: 35px;
   height: 35px;
   margin: 1.2% 10px;
